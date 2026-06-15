@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رقابت‌های ورزشی | تقویم و اخبار مسابقات</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&amp;display=swap');
+    
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+    }
+    
+    .comp-card {
+        background: #1e2937;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid #334155;
+    }
+    
+    .comp-card:hover {
+        border-color: #8b5cf6;
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    }
+    
+    .section-header {
+        font-size: 2.7rem;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+    
+    .content-text {
+        font-size: 1.05rem;
+        line-height: 2;
+        color: #94a3b8;
+    }
+    
+    .nav-dark {
+        background: #0f172a;
+        border-bottom: 1px solid #1e2937;
+    }
+    
+    .violet-accent {
+        color: #a78bfa;
+    }
+    
+    .competition-badge {
+        background: #581c87;
+        color: #c4b5fd;
+        font-size: 0.75rem;
+        padding: 4px 14px;
+        border-radius: 9999px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-dark sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-violet-600 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-trophy text-white text-3xl"></i>
+                    </div>
+                    <span class="font-bold text-3xl tracking-tighter">رقابت‌ها</span>
+                </div>
+                
+                <div class="flex items-center gap-x-8 text-sm font-medium">
+                    [داخلی](#domestic)
+                    [بین‌المللی](#international)
+                    [تقویم](#calendar)
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-screen-2xl mx-auto px-8 pt-16 pb-12">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-x-2 bg-violet-900/60 text-violet-300 px-5 py-2 rounded-3xl text-sm mb-6">
+                <i class="fa-solid fa-globe"></i>
+                <span>فصل ۱۴۰۳-۱۴۰۴</span>
+            </div>
+            <h1 class="section-header tracking-tighter mb-4">رقابت‌های ورزشی</h1>
+            <p class="text-xl text-slate-400">تقویم کامل مسابقات، لیگ‌ها و تورنمنت‌های مهم فوتبال و والیبال</p>
+        </div>
+    </div>
+
+    <!-- Major Competitions -->
+    <div class="max-w-screen-2xl mx-auto px-8 pb-14">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <div class="comp-card rounded-3xl p-7">
+                <div class="flex items-center justify-between mb-5">
+                    <span class="competition-badge">لیگ برتر</span>
+                    <i class="fa-solid fa-futbol text-violet-400"></i>
+                </div>
+                <h3 class="font-bold text-2xl mb-2">لیگ برتر فوتبال</h3>
+                <p class="text-sm text-slate-400">۱۶ تیم • ۳۰ هفته</p>
+                <div class="mt-6 text-xs text-violet-300">در حال برگزاری • هفته ۱۵</div>
+            </div>
+            
+            <div class="comp-card rounded-3xl p-7">
+                <div class="flex items-center justify-between mb-5">
+                    <span class="competition-badge">سوپر لیگ</span>
+                    <i class="fa-solid fa-volleyball-ball text-violet-400"></i>
+                </div>
+                <h3 class="font-bold text-2xl mb-2">لیگ برتر والیبال</h3>
+                <p class="text-sm text-slate-400">۱۴ تیم • ۲۶ هفته</p>
+                <div class="mt-6 text-xs text-violet-300">در حال برگزاری • هفته ۱۲</div>
+            </div>
+            
+            <div class="comp-card rounded-3xl p-7">
+                <div class="flex items-center justify-between mb-5">
+                    <span class="competition-badge">آسیایی</span>
+                    <i class="fa-solid fa-globe text-violet-400"></i>
+                </div>
+                <h3 class="font-bold text-2xl mb-2">لیگ نخبگان آسیا</h3>
+                <p class="text-sm text-slate-400">پرسپولیس • استقلال • سپاهان</p>
+                <div class="mt-6 text-xs text-violet-300">مرحله گروهی</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Domestic Section -->
+    <div id="domestic" class="max-w-screen-2xl mx-auto px-8 py-10">
+        <h2 class="text-3xl font-bold mb-8 px-1">رقابت‌های داخلی</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="comp-card rounded-3xl p-8">
+                <h4 class="font-semibold text-xl mb-3">جام حذفی فوتبال</h4>
+                <p class="content-text">جام حذفی با حضور ۳۲ تیم از لیگ‌های مختلف در حال برگزاری است. مرحله یک‌هشتم نهایی از هفته آینده آغاز می‌شود و تیم‌های بزرگ مانند پرسپولیس و استقلال در این مرحله به میدان خواهند رفت.</p>
+            </div>
+            
+            <div class="comp-card rounded-3xl p-8">
+                <h4 class="font-semibold text-xl mb-3">جام حذفی والیبال</h4>
+                <p class="content-text">رقابت‌های جام حذفی والیبال مردان و زنان از اواخر بهمن‌ماه آغاز خواهد شد. تیم‌های برتر لیگ برتر در این تورنمنت تک‌حذفی به مصاف هم می‌روند.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Long Content -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-12 border-t border-slate-700">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">بررسی رقابت‌های ورزشی فصل جاری</h2>
+            
+            <div class="space-y-9">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-violet-300">لیگ برتر فوتبال ایران</h3>
+                    <p class="content-text">لیگ برتر فوتبال ایران در فصل ۱۴۰۳-۱۴۰۴ با حضور ۱۶ تیم در حال برگزاری است. رقابت‌ها بسیار فشرده و نزدیک است و تا این لحظه تنها ۳ امتیاز بین رتبه اول تا پنجم فاصله وجود دارد. پرسپولیس با عملکرد ثابت خود در صدر قرار دارد، اما استقلال، سپاهان و تراکتور نیز شانس واقعی قهرمانی دارند. در این فصل، سطح کیفی مسابقات نسبت به سال‌های گذشته افزایش یافته و بازی‌های جذاب‌تری را شاهد هستیم. همچنین رقابت برای کسب سهمیه آسیایی بسیار شدید است و تیم‌های میانی جدول نیز برای رسیدن به رتبه‌های بالا تلاش می‌کنند.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-violet-300">لیگ برتر والیبال</h3>
+                    <p class="content-text">در بخش والیبال، لیگ برتر مردان و زنان با قدرت تمام در جریان است. تیم پیکان تهران در بخش مردان و سایپا در بخش زنان عملکرد بسیار خوبی داشته‌اند. رقابت‌ها در این رشته نیز بسیار نزدیک است و هر هفته شاهد نتایج غیرمنتظره هستیم. فدراسیون والیبال با برنامه‌ریزی دقیق، سعی کرده است که بازی‌ها در سالن‌های مناسب و با حضور تماشاگران برگزار شود. علاوه بر لیگ برتر، رقابت‌های رده‌های سنی نیز به صورت موازی در حال برگزاری است که آینده روشنی را برای والیبال ایران رقم خواهد زد.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-violet-300">رقابت‌های بین‌المللی</h3>
+                    <p class="content-text">در سطح بین‌المللی، تیم‌های ایرانی در لیگ نخبگان آسیا، لیگ ملت‌های والیبال و سایر تورنمنت‌ها حضور فعال دارند. پرسپولیس و استقلال در مرحله گروهی لیگ نخبگان آسیا عملکرد قابل قبولی داشته‌اند و شانس صعود به مراحل حذفی را دارند. تیم ملی والیبال نیز در لیگ ملت‌ها با انگیزه بالا حاضر شده و نتایج خوبی کسب کرده است. این رقابت‌ها نه تنها از نظر ورزشی مهم هستند، بلکه نقش مهمی در افزایش تجربه بازیکنان ایرانی در سطح جهانی ایفا می‌کنند.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- International Section -->
+    <div id="international" class="max-w-screen-2xl mx-auto px-8 py-12">
+        <h2 class="text-3xl font-bold mb-8 px-1">رقابت‌های بین‌المللی</h2>
+        
+        <div class="comp-card rounded-3xl p-9">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <span class="text-violet-400 text-sm">فوتبال</span>
+                    <h4 class="font-bold text-2xl mt-2">لیگ نخبگان آسیا</h4>
+					<img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrc_Bj99v0dbxGrkm_3JcoCtzor_1o2tjD5g&s" 
+  alt="تحلیل فرم تیم‌های اروپایی" 
+  style="width: 100%; max-width: 850px; height: 320px; object-fit: cover; display: block; margin: 24px auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);"
+>
+                    <p class="mt-3 text-sm text-slate-400">سه تیم ایرانی در این رقابت حضور دارند و تا این لحظه ۴ برد و ۲ تساوی کسب کرده‌اند.</p>
+                </div>
+                <div>
+                    <span class="text-violet-400 text-sm">والیبال</span>
+                    <h4 class="font-bold text-2xl mt-2">لیگ ملت‌های والیبال</h4>
+                    <p class="mt-3 text-sm text-slate-400">تیم ملی ایران در گروه سخت قرار دارد و تا هفته دهم ۷ برد و ۳ باخت داشته است.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-700 py-8 text-center text-sm text-slate-500">
+        <p>© ۱۴۰۳ رقابت‌های ورزشی — تمام حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>
